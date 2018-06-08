@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 首页底部的添加按钮打开的底部对话框 -->
+<!-- android:paddingBottom="@dimen/tab_bottom_height"是关键 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootlayout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/tab_bottom_height"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/home_popwidow_bg"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        >
+
+        <!-- 新建笔记 -->
+        <LinearLayout
+            android:layout_width="0.0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_addNote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="新建笔记"
+                android:textSize="14sp"
+                android:textColor="#555556"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:drawablePadding="5dp"/>
+
+        </LinearLayout>
+
+        <!-- 新建文件 -->
+        <LinearLayout
+            android:layout_width="0.0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_addFile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="新建文件"
+                android:textSize="14sp"
+                android:textColor="#555556"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:drawablePadding="5dp"/>
+
+        </LinearLayout>
+
+        <!-- 新建图片 -->
+        <LinearLayout
+            android:layout_width="0.0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_addPhoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="新建图片"
+                android:textSize="14sp"
+                android:textColor="#555556"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:drawablePadding="5dp"/>
+
+        </LinearLayout>
+
+        <!-- 新建视频 -->
+        <LinearLayout
+            android:layout_width="0.0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_addVideo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="新建视频"
+                android:textSize="14sp"
+                android:textColor="#555556"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:drawablePadding="5dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

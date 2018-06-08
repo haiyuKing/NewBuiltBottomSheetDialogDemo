@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- 中间fragment切换区域 -->
+    <FrameLayout
+        android:id="@+id/id_floating_dragger_center_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0.0dp"
+        android:layout_weight="1"></FrameLayout>
+
+    <!-- 阴影部分 -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@drawable/home_tab_bottom_line"/>
+
+    <!-- 底部选项卡区域 -->
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tab_bottom_height"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="#ffffff">
+
+        <!-- 添加 -->
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:background="@drawable/home_tab_add"
+            android:gravity="center"
+            android:layout_gravity="center"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
