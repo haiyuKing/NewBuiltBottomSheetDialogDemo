@@ -33,7 +33,6 @@ public class MainActivity extends AppCompatActivity {
 		rootView.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
 			@Override
 			public void onGlobalLayout() {
-				Toast.makeText(MainActivity.this,"{rootView}onGlobalLayout",Toast.LENGTH_SHORT).show();
 				//https://blog.csdn.net/u013872857/article/details/53750682
 				int[] loc = new int[2];
 				findViewById(R.id.bottom_layout).getLocationOnScreen(loc);

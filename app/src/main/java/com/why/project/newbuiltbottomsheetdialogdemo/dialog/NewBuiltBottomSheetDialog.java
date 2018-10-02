@@ -57,7 +57,8 @@ public class NewBuiltBottomSheetDialog extends BottomSheetDialog {
 		if(displayHeight_build > 0){
 			dialogHeight = displayHeight_build - navigationBarHeight - dip2px(mContext,0);//dip2px(mContext,0)预留在这里，如果以后想要调整距离的话
 		}
-		getWindow().setLayout(ViewGroup.LayoutParams.MATCH_PARENT, dialogHeight == 0 ? ViewGroup.LayoutParams.MATCH_PARENT : dialogHeight);
+//		getWindow().setLayout(ViewGroup.LayoutParams.MATCH_PARENT, dialogHeight == 0 ? ViewGroup.LayoutParams.MATCH_PARENT : dialogHeight);
+		getWindow().setLayout(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);//红米6pro适配
 		//设置透明
 		getWindow().findViewById(R.id.design_bottom_sheet).setBackgroundResource(android.R.color.transparent);
 
